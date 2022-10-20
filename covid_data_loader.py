@@ -1,5 +1,5 @@
 import pandas as pd
-DATA_SAVE_PATH = "data/covid_19_data.csv"
+COVID_DATA_PATH = "data/covid_19_data.csv"
 
 class CovidDataLoader:
     @staticmethod
@@ -10,7 +10,7 @@ class CovidDataLoader:
 
     @staticmethod
     def _read_data() -> pd.DataFrame:
-        return pd.read_csv(DATA_SAVE_PATH, encoding="utf-8")
+        return pd.read_csv(COVID_DATA_PATH, encoding="utf-8")
 
     @staticmethod
     def _cast_data_types(covid_data: pd.DataFrame) -> pd.DataFrame:
